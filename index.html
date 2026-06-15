@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Lolo — Cerro, Montevideo</title>
+<meta name="description" content="Ferretería El Lolo en el Cerro, Montevideo. Herramientas, pintura, sanitaria y electricidad. Abiertos lunes a sábado. WhatsApp: 098 528 449">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --naranja: #D85A30;
+    --negro: #1a1a18;
+    --gris-medio: #888780;
+    --gris-claro: #f1efe8;
+    --blanco: #ffffff;
+  }
+  body { font-family: 'Barlow', sans-serif; background: var(--gris-claro); color: var(--negro); min-height: 100vh; max-width: 480px; margin: 0 auto; }
+  .hero { background: var(--negro); padding: 36px 24px 32px; position: relative; overflow: hidden; }
+  .hero::after { content: ''; position: absolute; top: 0; right: -20px; width: 120px; height: 100%; background: var(--naranja); opacity: 0.10; transform: skewX(-8deg); }
+  .hero-barrio { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--naranja); margin-bottom: 10px; }
+  .hero-nombre { font-family: 'Barlow Condensed', sans-serif; font-size: 52px; font-weight: 700; color: var(--blanco); line-height: 1; margin-bottom: 6px; }
+  .hero-rubro { font-size: 15px; color: var(--gris-medio); }
+  .promo { background: var(--naranja); padding: 12px 24px; font-size: 14px; font-weight: 700; color: var(--blanco); display: flex; align-items: center; gap: 8px; }
+  .datos { background: var(--blanco); padding: 0 24px; }
+  .dato { display: flex; align-items: flex-start; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--gris-claro); }
+  .dato:last-child { border-bottom: none; }
+  .dato-icono { font-size: 22px; width: 28px; text-align: center; flex-shrink: 0; margin-top: 1px; }
+  .dato-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris-medio); margin-bottom: 3px; }
+  .dato-valor { font-size: 16px; font-weight: 500; color: var(--negro); line-height: 1.4; }
+  .cats { padding: 20px 24px; background: var(--gris-claro); }
+  .cats-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris-medio); margin-bottom: 12px; }
+  .cats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .cat-item { background: var(--blanco); border-radius: 8px; padding: 12px 14px; font-size: 14px; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+  .cat-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--naranja); flex-shrink: 0; }
+  .cta { padding: 0 24px 28px; background: var(--gris-claro); }
+  .cta-btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; background: #25D366; color: var(--blanco); text-decoration: none; border-radius: 10px; padding: 16px; font-size: 17px; font-weight: 700; font-family: 'Barlow', sans-serif; }
+  .cta-sub { text-align: center; font-size: 12px; color: var(--gris-medio); margin-top: 10px; }
+  footer { text-align: center; padding: 16px 24px 24px; font-size: 12px; color: var(--gris-medio); background: var(--negro); color: #444441; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-barrio">Cerro · Montevideo</div>
+  <div class="hero-nombre">El Lolo</div>
+  <div class="hero-rubro">Ferretería de barrio · Berna 2170</div>
+</header>
+
+<div class="promo">🔖 Aceptamos tarjetas de crédito y débito</div>
+
+<section class="datos">
+  <div class="dato">
+    <div class="dato-icono">🕐</div>
+    <div>
+      <div class="dato-label">Horario</div>
+      <div class="dato-valor">Lunes a sábado<br>Consultar horario por WhatsApp</div>
+    </div>
+  </div>
+  <div class="dato">
+    <div class="dato-icono">📍</div>
+    <div>
+      <div class="dato-label">Dónde estamos</div>
+      <div class="dato-valor">Berna 2170, Cerro<br>Montevideo</div>
+    </div>
+  </div>
+  <div class="dato">
+    <div class="dato-icono">📞</div>
+    <div>
+      <div class="dato-label">Teléfono</div>
+      <div class="dato-valor">2313 3975</div>
+    </div>
+  </div>
+</section>
+
+<section class="cats">
+  <div class="cats-label">Encontrás acá</div>
+  <div class="cats-grid">
+    <div class="cat-item"><span class="cat-dot"></span>Herramientas</div>
+    <div class="cat-item"><span class="cat-dot"></span>Pinturería</div>
+    <div class="cat-item"><span class="cat-dot"></span>Sanitaria</div>
+    <div class="cat-item"><span class="cat-dot"></span>Electricidad</div>
+  </div>
+</section>
+
+<section class="cta">
+  <a class="cta-btn" href="https://wa.me/59898528449?text=Hola!%20Los%20vi%20en%20internet%20y%20quería%20consultar">
+    💬 Escribinos por WhatsApp
+  </a>
+  <p class="cta-sub">Respondemos en el horario de atención</p>
+</section>
+
+<footer>Ferretería El Lolo · Cerro, Montevideo</footer>
+
+</body>
+</html>
